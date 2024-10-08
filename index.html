@@ -43,7 +43,7 @@
               <p id="term-alert" class="form-alert">This field is required.</p>
             </div>
 
-            <div class="form-alert">
+            <div class="form-item">
               <label class="light-text" for="interest-rate">Interest Rate</label>
               <div class="form-flex" id="interest-rate-main">
                 <input id="interest-rate" type="number"
@@ -53,10 +53,65 @@
               
               <p class="form-alert" id="rate alert">This field is required</p>
             </div>
-  
           </div>
         </div>
+
+        <div class="form-item">
+          <label class="light-text">Mortgage Type</label>
+
+          <div class="radio-inputs">
+            <input id="repayment" class="mortgage-type" type="radio"
+            name="mortgage-type" value="repayment" required>
+            <label for="repayment">Repayment</label>
+         </div>
+
+         <div class="radio-inputs">
+          <input id="interest-only" class="mortgage-type" type="radio"
+          name="mortgage-type" value="interest-only" required>
+          <label for="interest-only">Interest Only</label>
+       </div>
+
+       <p class="form-alert" id="type-alert">This field is required.</p>
+      </div>
+      <div class="form-item">
+        <button id="calculate-btn" class="calculate-btn" type="button">Calculate Repayment</button>
+      </div>
       </form>
+    </div>
+
+    <div class="right">
+      <div class="default-text" id="default-text">
+        <img src="images/illustration-empty.svg" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#133041" d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 18.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 15a1.125 1.125 0 1 1 0-2.25A1.125 1.125 0 0 1 12 15Zm3.75 3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm1.5-5.25a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v3.75Z"/></svg>
+
+
+        <h2>Results shown here</h2>
+        <p class="light-text">Complete the form and click "calculate repayemnts" to see what your monthly
+          repayments would be
+        </p>
+      </div>
+
+      <div class="calculations-container" id="calculations-container">
+        <h2>Your results</h2>
+        <p class="light-text">Your results are shown below based on 
+          the information your provided. To adjust the results, edit the form 
+          and click "Calculate Repayments" again.
+        </p>
+
+        <div class="calculations">
+          <div class="monthly">
+            <p class="light-text">Your monthly repayments</p>
+            <span id="result" class="monthly-result"></span>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="total-term">
+            <p class="light-text">Total you will pay over the term</p>
+            <span id="term-result" class="term-result"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
