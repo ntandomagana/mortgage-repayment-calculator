@@ -121,5 +121,5 @@ document.getElementById('clear-btn').addEventListener('click', () => {
 })
 
 document.querySelectorAll('.form-alert').forEach(alert => {
-    alert.style.display = 'nonee'
+    alert.style.display = 'none'
 })
