@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script src="main.js" defer></script>
+  
   <link rel="stylesheet" href="style.css">
+ 
   
   
 
@@ -39,7 +40,7 @@
             <div class="form-item">
               <label for="mortgage-term" class="light-text">Mortgage Term</label>
               <div class="form-flex" id="mortgage-term-main">
-                <input type="mortgage-term" type="number"
+                <input id="mortgage-term" type="number"
                 name="mortgage-term" required>
                 <p class="form-symbol">Years</p>
               </div>
@@ -51,7 +52,7 @@
               <label class="light-text" for="interest-rate">Interest Rate</label>
               <div class="form-flex" id="interest-rate-main">
                 <input id="interest-rate" type="number"
-                name="interest-rate" stop="0.01" required>
+                name="interest-rate" step="0.01" required>
                 <p class="form-symbol">%</p>
               </div>
               
@@ -127,5 +128,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
